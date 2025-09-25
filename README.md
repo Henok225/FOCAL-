@@ -165,7 +165,7 @@ Special thanks to:
 
 **Henok Zena**
 
-* 🌐 [Portfolio](https://henokzena.netlify.app) 
+* 🌐 [Portfolio](https://henoks-portfolio.netlify.app/) 
 * 💼 [LinkedIn](https://www.linkedin.com/in/henok-zena-3b8b99260/)
 * 🐙 [GitHub](https://github.com/Henok225)
 
