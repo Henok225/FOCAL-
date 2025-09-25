@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { CalendarCheck, Facebook, GithubIcon, Lightbulb, Linkedin, Mail, MapPin, PersonStandingIcon, Phone, Send, Sparkles, TelescopeIcon, TwitterIcon,  } from 'lucide-react';
 
-// We are using inline SVG icons from the lucide library because external imports are not supported in this single-file environment.
+
 const icons = {
   TelescopeIcon: TelescopeIcon,
   CuriosityIcon: Lightbulb,
