@@ -7,7 +7,7 @@ The site provides information about the club, its mission, history, team members
 ---
 
 ## 🚀 Live Demo
-[Visit the Website](https://your-deployment-link.com)  
+[Visit the Website](https://focalphysicsclub.netlify.app)  
 *(Update this link once deployed on Netlify or Vercel)*
 
 ---
