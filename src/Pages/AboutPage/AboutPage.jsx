@@ -37,10 +37,18 @@ const AboutPage = () => (
           <h2 className="text-3xl font-semibold text-[#F8FAFC] mb-4">{pageData.About.sections[1].title}</h2>
           <div className="space-y-4">
             <p className="text-lg">
-              <span className="font-bold text-[#38BDF8]">Mission:</span> {pageData.About.sections[1].mission}
+              <span className="font-bold text-[#38BDF8] text-xl">Mission:</span> {pageData.About.sections[1].mission}
             </p>
             <p className="text-lg">
-              <span className="font-bold text-[#38BDF8]">Vision:</span> {pageData.About.sections[1].vision}
+              <span className="font-bold text-[#38BDF8] text-xl">Vision:</span>
+              <div className="flex items-start space-x-2 mt-2 flex-col"> {
+                pageData.About.sections[1].vision.map((v, index) => (
+                  <p key={index} className="mt-2">
+                    <li className="font-semibold text-[#00A000] text-lg">{v.title}:</li> {v.text}
+                  </p>
+                ))
+               }
+               </div>
             </p>
           </div>
         </section>
@@ -48,6 +56,12 @@ const AboutPage = () => (
           <h2 className="text-3xl font-semibold text-[#F8FAFC] mb-4">{pageData.About.sections[2].title}</h2>
           <ul className="list-disc list-inside space-y-2 text-lg">
             {pageData.About.sections[2].list.map((item, index) => <li key={index}>{item}</li>)}
+          </ul>
+        </section>
+        <section className="animate-in-from-bottom animate-delay-200">
+          <h2 className="text-3xl font-semibold text-[#F8FAFC] mb-4">{pageData.About.sections[3].title}</h2>
+          <ul className="list-disc list-inside space-y-2 text-lg">
+            {pageData.About.sections[3].list.map((item, index) => <li key={index}>{item}</li>)}
           </ul>
         </section>
         <section className="animate-in-from-bottom animate-delay-300">

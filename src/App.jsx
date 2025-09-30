@@ -64,8 +64,9 @@ const TeamCard = ({ name, image, position, bio, social }) => {
       ref={cardRef}
       className={`bg-[#1E293B] p-6 rounded-2xl shadow-lg transform transition-all duration-700 ease-out-back hover:-translate-y-2 hover:shadow-2xl ${isVisible ? 'animate-in-from-bottom' : 'opacity-0 translate-y-20'}`}
     >
-      <img src={image} alt={name} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-[#38BDF8] shadow-md" />
-      <div className="text-center">
+      <img style={{width:'150px', height:'150px'}} src={image} alt={name} className="w-24 h-24 rounded-full mx-auto mb-4 object-cover border-4 border-[#38BDF8] shadow-md" />
+      
+       <div className="text-center">
         <h3 className="text-xl font-bold text-[#F8FAFC]">{name}</h3>
         <p className="text-sm font-semibold text-[#38BDF8] mb-2">{position}</p>
         <p className="text-[#CBD5E1] text-sm mb-4">{bio}</p>
@@ -137,7 +138,8 @@ const JoinUsPage = () => (
       >
         <icons.TelegramIcon className="w-6 h-6" />
         <span>{pageData.JoinUs.cta}</span>
-      </a>
+      </a> 
+      
     </div>
   </div>
 );
@@ -260,7 +262,7 @@ const App = () => {
                   <a
                     key={item}
                     href={`#${item}`}
-                    className={`text-lg font-medium transition-colors hover:text-[#38BDF8] focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:ring-offset-2 focus:ring-offset-[#0F172A] ${currentPage === item ? 'text-[#38BDF8]' : 'text-[#CBD5E1]'}`}
+                    className={`text-sm font-medium transition-colors hover:text-[#38BDF8] focus:outline-none focus:ring-2 focus:ring-[#38BDF8] focus:ring-offset-2 focus:ring-offset-[#0F172A] ${currentPage === item ? 'text-[#38BDF8]' : 'text-[#CBD5E1]'}`}
                   >
                     {item}
                   </a>
